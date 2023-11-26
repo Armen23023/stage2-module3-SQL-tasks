@@ -24,12 +24,10 @@ values ('Art ', '1'),
         ('PE  ', '3'),
       ('Math ', '3'),
         ('Science   ', '4'),
-       ('IT  ', '4'),
-        ('Physic', '5'),
-       ('Algebra','5'),  ('Math', '5'),
-       ('Armenian','5'),  ('HR', '5'),
-       ('English','5') , ('Geometrical', '5'),
-       ('Russian','5');
+       ('IT  ', '4');
+insert into SUBJECT(name, description, grade) values
+
+       ('English','awdawdawd',5) , ('Geometrical','awdsasdas', 5);
 
 
 insert into PAYMENTTYPE(NAME)
