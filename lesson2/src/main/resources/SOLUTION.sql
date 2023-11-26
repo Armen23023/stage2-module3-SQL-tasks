@@ -28,9 +28,9 @@ values ('PE  ', '3'),
 insert into SUBJECT(name, grade)
 values ('Science   ', '4'),
        ('IT  ', '4');
-insert into SUBJECT(name, grade)
-values ('Physic', '5'),
-       ('Algorithms', '5');
+insert into SUBJECT(name,DESCRIPTION, grade)
+values ('Physic','its about Physic', '5'),
+       ('Algebra', 'its about algebra','5');
 
 insert into PAYMENTTYPE(NAME)
 values ('DAILY'),
