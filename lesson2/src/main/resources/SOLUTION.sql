@@ -26,7 +26,10 @@ values ('Art ', '1'),
         ('Science   ', '4'),
        ('IT  ', '4'),
         ('Physic', '5'),
-       ('Algebra','5');
+       ('Algebra','5'),  ('Math', '5'),
+       ('Armenian','5'),  ('HR', '5'),
+       ('English','5') , ('Geometrical', '5'),
+       ('Russian','5');
 
 
 insert into PAYMENTTYPE(NAME)
