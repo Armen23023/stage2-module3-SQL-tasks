@@ -41,3 +41,5 @@ CREATE TABLE payment
     foreign key (student_id) references student(id)
 );
 
+
+
