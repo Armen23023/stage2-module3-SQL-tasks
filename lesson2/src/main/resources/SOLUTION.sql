@@ -18,19 +18,16 @@ values ('John', '2000-01-01', 1),
 
 insert into SUBJECT(name, grade)
 values ('Art ', '1'),
-       ('Music', '1');
-insert into SUBJECT(name, grade)
-values ('Geography ', '2'),
-       ('History ', '2');
-insert into SUBJECT(name, grade)
-values ('PE  ', '3'),
-       ('Math ', '3');
-insert into SUBJECT(name, grade)
-values ('Science   ', '4'),
-       ('IT  ', '4');
-insert into SUBJECT(name,DESCRIPTION, grade)
-values ('Physic','its about Physic', '5'),
-       ('Algebra', 'its about algebra','5');
+       ('Music', '1'),
+        ('Geography ', '2'),
+      ('History ', '2'),
+        ('PE  ', '3'),
+      ('Math ', '3'),
+        ('Science   ', '4'),
+       ('IT  ', '4'),
+        ('Physic', '5'),
+       ('Algebra','5');
+
 
 insert into PAYMENTTYPE(NAME)
 values ('DAILY'),
