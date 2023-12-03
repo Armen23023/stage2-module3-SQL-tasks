@@ -55,4 +55,6 @@ values ((SELECT ID from STUDENT where NAME = 'Chris' limit 1), (select ID from S
        ((SELECT ID from STUDENT where NAME = 'Jacob' limit 1), (select ID from SUBJECT where NAME = 'Math'), 4),
        ((SELECT ID from STUDENT where NAME = 'Logan' limit 1), (select ID from SUBJECT where NAME = 'PE'), 9),
        ((SELECT ID from STUDENT where NAME = 'Gaga' limit 1), (select ID from SUBJECT where NAME = 'IT'), 8),
-       ((SELECT ID from STUDENT where NAME = 'Chris' limit 1), (select ID from SUBJECT where NAME = 'Music'), 9)
+       ((SELECT ID from STUDENT where NAME = 'Chris' limit 1), (select ID from SUBJECT where NAME = 'Music'), 9);
+
+
