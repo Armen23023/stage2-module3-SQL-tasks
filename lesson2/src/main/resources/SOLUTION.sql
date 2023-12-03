@@ -17,17 +17,16 @@ values ('John', '2000-01-01', 1),
 
 
 insert into SUBJECT(name, grade)
-values ('Art ', '1'),
-       ('Music', '1'),
-        ('Geography ', '2'),
-      ('History ', '2'),
-        ('PE  ', '3'),
-      ('Math ', '3'),
-        ('Science   ', '4'),
-       ('IT  ', '4');
-insert into SUBJECT(name, description, grade) values
-
-       ('English','awdawdawd',5) , ('Geometrical','awdsasdas', 5);
+values ('Art ', 1),
+       ('Music', 1),
+        ('Geography ', 2),
+      ('History ', 2),
+        ('PE  ', 3),
+      ('Math ', 3),
+        ('Science   ', 4),
+       ('IT  ', 4),
+        ('Algebra',5),
+    ('Biology',5);
 
 
 insert into PAYMENTTYPE(NAME)
