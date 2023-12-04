@@ -10,9 +10,9 @@ select m.*
 
 select s.*
  from STUDENT s
- join PAYMENT p
+ inner join PAYMENT p
     on s.ID = p.STUDENT_ID
- join PAYMENTTYPE pt
+ inner join PAYMENTTYPE pt
     on p.TYPE_ID = pt.ID
  where pt.NAME = 'WEEKLY';
 
