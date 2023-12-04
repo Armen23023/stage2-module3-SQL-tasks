@@ -1,21 +1,23 @@
-SELECT p.*
-FROM PAYMENT p
-         JOIN PUBLIC.PAYMENTTYPE P2 ON P2.ID = p.TYPE_ID
-WHERE P2.NAME = 'MONTHLY';
+select p.*
+ from PAYMENT p
+ join PUBLIC.PAYMENTTYPE P2 on P2.ID = p.TYPE_ID
+ where p2.NAME = 'MONTHLY';
 
-SELECT m.*
-FROM MARK m
-         JOIN SUBJECT S ON S.ID = m.SUBJECT_ID
-WHERE S.NAME = 'Art';
+select m.*
+ from MARK m
+ join PUBLIC.SUBJECT S on S.ID = m.SUBJECT_ID
+ where s.NAME = 'Art';
 
-SELECT s.*
-FROM STUDENT s
-         JOIN PAYMENT p ON s.ID = p.STUDENT_ID
-         JOIN PAYMENTTYPE pt ON p.TYPE_ID = pt.ID
-WHERE pt.NAME = 'WEAKLY';
+select s.*
+ from STUDENT s
+ join PAYMENT p
+    on s.ID = p.STUDENT_ID
+ join PAYMENTTYPE pt
+    on p.TYPE_ID = pt.ID
+ where pt.NAME = 'WEAKLY';
 
-SELECT s.*
-FROM STUDENT s
-         JOIN MARK M ON s.ID = M.STUDENT_ID
-         JOIN SUBJECT su ON M.SUBJECT_ID = su.ID
-WHERE su.NAME = 'Math';
+select s.*
+ from STUDENT s
+ join PUBLIC.MARK M on s.ID = M.STUDENT_ID
+ join SUBJECT su on M.SUBJECT_ID = su.ID
+ where su.NAME = 'Math';
