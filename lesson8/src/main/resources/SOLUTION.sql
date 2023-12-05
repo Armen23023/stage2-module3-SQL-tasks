@@ -1,7 +1,7 @@
-SELECT min(BIRTHDAY) from STUDENT;
+SELECT max(BIRTHDAY) from STUDENT;
 
 select min(PAYMENT_DATE) from   PAYMENT;
 
-select avg(MARK) from MARK join SUBJECT s on MARK.SUBJECT_ID = s.ID;
+select avg(MARK) from MARK where SUBJECT_ID = (select id from SUBJECT where NAME = 'Math');
 
-select min(AMOUNT) from PAYMENT join PAYMENTTYPE pt  on pt.ID = PAYMENT.ID where pt.NAME = 'WEEKLY';
+select min(AMOUNT) from PAYMENT where TYPE_ID = (select ID from PAYMENTTYPE where NAME = 'WEEKLY');
