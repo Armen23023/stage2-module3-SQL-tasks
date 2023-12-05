@@ -21,3 +21,4 @@ select s.*
  join PUBLIC.MARK M on s.ID = M.STUDENT_ID
  join SUBJECT su on M.SUBJECT_ID = su.ID
  where su.NAME = 'Math';
+
