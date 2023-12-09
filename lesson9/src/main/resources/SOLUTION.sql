@@ -11,7 +11,7 @@ SELECT s.ID,s.NAME from STUDENT s
  join (
      SELECT STUDENT_ID, MARK
       from MARK
-      group by STUDENT_ID
+      group by MARK
       having min(MARK) > 7
  ) m on s.ID = m.STUDENT_ID;
 
@@ -20,6 +20,6 @@ SELECT  s.ID, s.NAME from STUDENT s
  join (
      SELECT STUDENT_ID, PAYMENT_DATE
       from  PAYMENT
-       group by STUDENT_ID
+       group by PAYMENT_DATE
         having  count(PAYMENT_DATE) > 2
 ) p on s.ID = p.STUDENT_ID;
