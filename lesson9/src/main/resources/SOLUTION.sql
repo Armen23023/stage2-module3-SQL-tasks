@@ -7,13 +7,14 @@ Select s.* from STUDENT s
  ) m on s.ID = m.STUDENT_ID;
 
 
-SELECT s.ID,s.NAME from STUDENT s
- join (
-     SELECT STUDENT_ID, MARK
-      from MARK
-      group by MARK
-      having min(MARK) > 7
- ) m on s.ID = m.STUDENT_ID;
+SELECT s.ID, s.NAME
+ FROM STUDENT s
+         JOIN (
+     SELECT STUDENT_ID
+     FROM MARK
+     GROUP BY STUDENT_ID
+     HAVING MIN(MARK) > 7
+ ) m ON s.ID = m.STUDENT_ID;
 
 
 SELECT  s.ID, s.NAME from STUDENT s
