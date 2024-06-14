@@ -1,5 +1,5 @@
 DELETE FROM student
-WHERE id IN (
+ WHERE id IN (
     SELECT s.id
     FROM student s
              JOIN mark m ON s.id = m.student_id
@@ -7,7 +7,7 @@ WHERE id IN (
     WHERE sub.grade > 4
     );
 DELETE FROM mark
-WHERE student_id IN (
+ WHERE student_id IN (
     SELECT s.id
     FROM student s
              JOIN mark m ON s.id = m.student_id
@@ -16,7 +16,7 @@ WHERE student_id IN (
     );
 
 DELETE FROM payment
-WHERE student_id IN (
+ WHERE student_id IN (
     SELECT s.id
     FROM student s
              JOIN mark m ON s.id = m.student_id
@@ -26,7 +26,7 @@ WHERE student_id IN (
 
 
 DELETE FROM STUDENT
-WHERE id IN (
+ WHERE id IN (
     SELECT s.id
     FROM student s
              JOIN mark m ON s.id = m.student_id
@@ -36,11 +36,11 @@ WHERE id IN (
 
 
 DELETE from PAYMENTTYPE
-WHERE NAME in(
+ WHERE NAME in(
     SELECT p.id
     from PAYMENT p
             join PUBLIC.PAYMENTTYPE P2 on P2.ID = p.TYPE_ID
     ) and NAME = 'Daily';
 
 DELETE FROM MARK
-WHERE MARK <7;
+ WHERE MARK <7;
